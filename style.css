@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}    
+
+body{
+    background-color: #222;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background:linear-gradient(135deg,#00feba,#5b548a );
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 15px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: none;
+    outline: none;
+    background:#e7fffb;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    flex: 1;/*if container width changes then this element agjust the size*/
+    font-weight: 600;
+    margin-right: 20px;
+}
+.search button{
+    overflow: hidden;
+    border: none;
+    width: 60px;
+    height:60px ;
+    border-radius: 50%;
+}
+.search i{
+    border: none;
+    outline: none;
+    background:#e7fffb;
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    cursor:pointer;
+}
+
+.main_i{/*wether-icon*/
+    color: #ffffff;
+    font-size:11vw;
+    opacity: 1;
+}
+
+.weather h1{
+    font-size: 4vw;
+    font-weight: 500;
+
+}
+.weather h2{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-top: 0.2vh;
+
+}
+.details{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* padding: 0 0.1vw; */
+    margin-top:3vw ;
+    
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.column i{
+    font-size: 6vw;
+    opacity: 0.7;
+}
+.humidity,.wind{
+    font-size: 1.5vw;
+}
+.text{
+    font-size:1.4vw ;
+}
+
+.weather{
+    /* we handelling this using js */
+    display: none;
+}
+.error{
+    text-align: left;
+    color:white;
+    opacity: 0;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 1.2vw;
+    /* transition:opacity linear 0.5s; */
+    font-weight: 900;
+}
+
+
+
+@media (max-width:600px){
+    .search input{
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .search button{
+        width: 80px;
+        height:50px ;
+        border-radius:15px ;
+    }
+    .main_i{/*wether-icon*/
+        font-size:40vw;
+    }
+    .weather h1{
+        font-size: 15vw;
+    }
+    .weather h2{
+        font-size: 7vw;
+    }
+    .column i{
+        font-size: 20vw;
+    }
+    .humidity,.wind{
+        font-size: 5vw;
+    }
+    .text{
+        font-size:5vw ;
+    }
+    .error{
+        font-size: 2vh;
+    }
+
+}
